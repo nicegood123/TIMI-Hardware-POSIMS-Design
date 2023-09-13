@@ -1,0 +1,42 @@
+.btn-timi-orange {
+    color: #fff;
+    background-color: orange;
+    border-color: orange
+}
+
+.btn-timi-orange:hover {
+    color: #fff;
+    background-color: orange;
+    border-color: orange
+}
+
+.btn-timi-orange.focus,
+.btn-timi-orange:focus {
+    color: #fff;
+    background-color: orange;
+    border-color: orange;
+    -webkit-box-shadow: 0 0 0 .2rem rgba(38, 143, 255, .5);
+    box-shadow: 0 0 0 .2rem rgba(38, 143, 255, .5)
+}
+
+.btn-timi-orange.disabled,
+.btn-timi-orange:disabled {
+    color: #fff;
+    background-color: orange;
+    border-color: orange
+}
+
+.btn-timi-orange:not(:disabled):not(.disabled).active,
+.btn-timi-orange:not(:disabled):not(.disabled):active,
+.show>.btn-timi-orange.dropdown-toggle {
+    color: #fff;
+    background-color: orange;
+    border-color: orange;
+}
+
+.btn-timi-orange:not(:disabled):not(.disabled).active:focus,
+.btn-timi-orange:not(:disabled):not(.disabled):active:focus,
+.show>.btn-timi-orange.dropdown-toggle:focus {
+    -webkit-box-shadow: 0 0 0 .2rem rgba(255, 168, 38, 0.5);
+    box-shadow: 0 0 0 .2rem rgba(255, 168, 38, 0.5)
+}
