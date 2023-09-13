@@ -7,11 +7,11 @@
 }
 
 .custom-input-with-icon .input-left-icon {
-    position: absolute;
-    left: 17px;
-    top: 12px;
-    font-size: 20px;
-    color: #777
+    position: absolute !important;
+    left: 17px !important;
+    top: 12px !important;
+    font-size: 20px !important;
+    color: #777 !important;
 }
 
 .custom-input-left-icon {

@@ -627,9 +627,7 @@ p {
 }
 
 .border-radius-100,
-.user-info-dropdown .dropdown-toggle .user-icon img {
-    width: 100%;
-    height: 100%;
+.user-info-dropdown .dropdown-toggle {
     border-radius: 100%
 }
 
@@ -1620,6 +1618,12 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child:before {
     border-radius: 100%;
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .18);
     box-shadow: 0 0 10px rgba(0, 0, 0, .18)
+}
+
+.user-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
 }
 
 .user-info-dropdown .dropdown-toggle .user-name {
