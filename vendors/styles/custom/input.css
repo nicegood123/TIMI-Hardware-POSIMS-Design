@@ -1,0 +1,19 @@
+.custom-input-with-icon {
+    width: 100% !important;
+}
+
+.custom-input-with-icon .form-group {
+    position: relative !important
+}
+
+.custom-input-with-icon .input-left-icon {
+    position: absolute;
+    left: 17px;
+    top: 12px;
+    font-size: 20px;
+    color: #777
+}
+
+.custom-input-left-icon {
+    padding-left: 50px !important;
+}
