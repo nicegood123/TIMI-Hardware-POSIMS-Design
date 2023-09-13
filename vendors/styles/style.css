@@ -828,7 +828,8 @@ textarea.form-control {
 .custom-select:focus,
 .form-control:focus {
     color: #131e22;
-    border-color: #1b00ff;
+    border-color: #FB5C16;
+    /* border-color: #1b00ff; */
     -webkit-box-shadow: 0 0 28px rgba(0, 0, 0, .1);
     box-shadow: 0 0 28px rgba(0, 0, 0, .1)
 }
@@ -884,7 +885,8 @@ textarea.form-control {
 }
 
 .form-control:focus~.input-group-append .fa {
-    color: #1b00ff
+    color: #FB5C16
+        /* color: #1b00ff */
 }
 
 .form-control-lg,
@@ -1070,7 +1072,8 @@ textarea.form-control {
     top: 2px;
     left: -30px;
     background-color: transparent;
-    border: 2px solid #1b00ff
+    border: 2px solid #FB5C16
+        /* border: 2px solid #1b00ff */
 }
 
 .custom-control-label::after {
@@ -1088,7 +1091,10 @@ textarea.form-control {
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background-color: #1b00ff
+    border-color: #FB5C16;
+    background-color: #FB5C16
+        /* background-color: #1b00ff */
+
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::after {
@@ -1098,7 +1104,8 @@ textarea.form-control {
 }
 
 .custom-radio .custom-control-input:checked~.custom-control-label::before {
-    background-color: #1b00ff
+    background-color: #FB5C16
+        /* background-color: #1b00ff */
 }
 
 .custom-checkbox .custom-control-input:disabled:checked~.custom-control-label::before {
