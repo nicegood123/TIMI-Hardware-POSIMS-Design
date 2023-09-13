@@ -20,7 +20,18 @@
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="vendors/styles/core.css" />
 	<link rel="stylesheet" type="text/css" href="vendors/styles/icon-font.min.css" />
+
+	<!-- switchery css -->
+	<link rel="stylesheet" type="text/css" href="src/plugins/switchery/switchery.min.css" />
+	<!-- bootstrap-tagsinput css -->
+	<link rel="stylesheet" type="text/css" href="src/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" />
+	<!-- bootstrap-touchspin css -->
+	<link rel="stylesheet" type="text/css" href="src/plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.css" />
 	<link rel="stylesheet" type="text/css" href="vendors/styles/style.css" />
+
+	<link rel="stylesheet" type="text/css" href="vendors/styles/style.css" />
+
+
 
 	<!-- Custom CSS -->
 	<link rel="stylesheet" type="text/css" href="vendors/styles/custom/text-color.css" />
@@ -28,6 +39,10 @@
 	<link rel="stylesheet" type="text/css" href="vendors/styles/custom/border-color.css" />
 	<link rel="stylesheet" type="text/css" href="vendors/styles/custom/button.css" />
 	<link rel="stylesheet" type="text/css" href="vendors/styles/custom/input.css" />
+
+	<!-- Custom/Products CSS -->
+	<link rel="stylesheet" type="text/css" href="vendors/styles/custom/products/img-products.css" />
+
 </head>
 
 <body class="sidebar-shrink">
@@ -46,7 +61,7 @@
 
 	<div class="header">
 		<div class="header-left">
-			<img src="vendors/images/timi-logo.svg" style="height: 55px;" alt="" />
+			<img src="vendors/images/timi-logo.svg" class="ml-2" style="height: 55px;" alt="" />
 		</div>
 		<div class="header-right">
 			<div class="user-info-dropdown">
@@ -81,22 +96,25 @@
 									Products
 								</h5>
 
+
 								<form action="">
 									<div class="custom-input-with-icon">
 										<div class="form-group">
 											<i class="dw dw-search2 input-left-icon"></i>
 											<input type="text" class="form-control custom-input-left-icon"
-												placeholder="Scan/Search product here">
+												placeholder="Scan/Search product here" autofocus>
 										</div>
 									</div>
 								</form>
+
+								<hr>
 
 								<div class="row">
 									<div class="col-lg-6 col-xl-4 mb-30">
 										<div class="card card-box border-timi-orange">
 											<div class="card-body">
-												<img src="vendors/images/products/1.jpg" width="100%"
-													style="height: 180px;" class="rounded" alt="">
+												<img src="vendors/images/products/1.jpg" class="product-image rounded"
+													alt="">
 
 												<p class="mt-2 mb-0">
 													<b>
@@ -112,8 +130,8 @@
 									<div class="col-lg-6 col-xl-4 mb-30">
 										<div class="card card-box border-timi-orange">
 											<div class="card-body">
-												<img src="vendors/images/products/2.jpg" width="100%"
-													style="height: 180px;" class="rounded" alt="">
+												<img src="vendors/images/products/2.jpg" class="product-image rounded"
+													alt="">
 
 												<p class="mt-2 mb-0">
 													<b>
@@ -129,8 +147,8 @@
 									<div class="col-lg-6 col-xl-4 mb-30">
 										<div class="card card-box border-timi-orange">
 											<div class="card-body">
-												<img src="vendors/images/products/3.jpeg" width="100%"
-													style="height: 180px;" class="rounded" alt="">
+												<img src="vendors/images/products/3.jpeg" class="product-image rounded"
+													alt="">
 
 												<p class="mt-2 mb-0">
 													<b>
@@ -146,8 +164,8 @@
 									<div class="col-lg-6 col-xl-4 mb-30">
 										<div class="card card-box border-timi-orange">
 											<div class="card-body">
-												<img src="vendors/images/products/1.jpg" width="100%"
-													style="height: 180px;" class="rounded" alt="">
+												<img src="vendors/images/products/1.jpg" class="product-image rounded"
+													alt="">
 
 												<p class="mt-2 mb-0">
 													<b>
@@ -163,8 +181,8 @@
 									<div class="col-lg-6 col-xl-4 mb-30">
 										<div class="card card-box border-timi-orange">
 											<div class="card-body">
-												<img src="vendors/images/products/4.jpeg" width="100%"
-													style="height: 180px;" class="rounded" alt="">
+												<img src="vendors/images/products/4.jpeg" class="product-image rounded"
+													alt="">
 
 												<p class="mt-2 mb-0">
 													<b>
@@ -180,8 +198,8 @@
 									<div class="col-lg-6 col-xl-4 mb-30">
 										<div class="card card-box border-timi-orange">
 											<div class="card-body">
-												<img src="vendors/images/products/3.jpeg" width="100%"
-													style="height: 180px;" class="rounded" alt="">
+												<img src="vendors/images/products/3.jpeg" class="product-image rounded"
+													alt="">
 
 												<p class="mt-2 mb-0">
 													<b>
@@ -194,9 +212,6 @@
 											</div>
 										</div>
 									</div>
-
-
-
 
 
 									<!-- <div class="col-sm-12 mb-30">
@@ -215,13 +230,40 @@
 								<h5 class="card-title">
 									Orders
 								</h5>
-								<p class="card-text">
-									With supporting text below as a natural lead-in to
-									additional content.
-								</p>
-								<a href="#" class="btn btn-timi-orange">
-									Pay
-								</a>
+
+								<hr class="mt-30">
+
+
+								<button class="btn btn-info btn-block mb-10">
+									<i class="dw dw-add-user"></i>
+									Add Customer
+								</button>
+
+								<div class="form-group">
+									<select class="selectpicker form-control" data-style="btn-outline-dark"
+										data-size="5">
+										<option>Walk-in Customer</option>
+										<option>Jan Harvey Jiminez</option>
+										<option>Robert Baltazar</option>
+									</select>
+								</div>
+
+								<hr class="mt-30 mb-30">
+
+								<div class="row">
+									<div class="col-md-6">
+										<a href="#" class="btn btn-dark btn-block">
+											<i class="dw dw-cancel"></i>
+											Clear
+										</a>
+									</div>
+									<div class="col-md-6">
+										<a href="#" class="btn btn-timi-orange btn-block">
+											<i class="dw dw-money"></i>
+											Pay
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -238,6 +280,14 @@
 	<script src="vendors/scripts/script.min.js"></script>
 	<script src="vendors/scripts/process.js"></script>
 	<script src="vendors/scripts/layout-settings.js"></script>
+
+	<!-- switchery js -->
+	<script src="src/plugins/switchery/switchery.min.js"></script>
+	<!-- bootstrap-tagsinput js -->
+	<script src="src/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js"></script>
+	<!-- bootstrap-touchspin js -->
+	<script src="src/plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
+	<script src="vendors/scripts/advanced-components.js"></script>
 </body>
 
 </html>
