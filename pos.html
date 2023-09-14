@@ -22,8 +22,6 @@
 	<link rel="stylesheet" type="text/css" href="vendors/styles/icon-font.min.css" />
 	<link rel="stylesheet" type="text/css" href="vendors/styles/style.css" />
 
-
-
 	<!-- Custom CSS -->
 	<link rel="stylesheet" type="text/css" href="vendors/styles/custom/text-color.css" />
 	<link rel="stylesheet" type="text/css" href="vendors/styles/custom/bg-color.css" />
@@ -37,18 +35,6 @@
 </head>
 
 <body class="sidebar-shrink">
-	<!-- <div class="pre-loader">
-		<div class="pre-loader-box">
-			<div class="loader-logo">
-				<img src="vendors/images/timi-logo.svg" alt="" />
-			</div>
-			<div class="loader-progress" id="progress_div">
-				<div class="bar" id="bar1"></div>
-			</div>
-			<div class="percent" id="percent1">0%</div>
-			<div class="loading-text">Loading...</div>
-		</div>
-	</div> -->
 
 	<div class="header">
 		<div class="header-left">
@@ -87,7 +73,6 @@
 									Products
 								</h5>
 
-
 								<form action="">
 									<div class="custom-input-with-icon">
 										<div class="form-group">
@@ -102,7 +87,7 @@
 
 								<div class="row">
 									<div class="col-lg-6 col-xl-4 mb-30">
-										<div class="card card-box border-timi-orange">
+										<div class="card card-box border-dark">
 											<div class="card-body">
 												<img src="vendors/images/products/1.jpg" class="product-image rounded"
 													alt="">
@@ -119,7 +104,7 @@
 										</div>
 									</div>
 									<div class="col-lg-6 col-xl-4 mb-30">
-										<div class="card card-box border-timi-orange">
+										<div class="card card-box border-dark">
 											<div class="card-body">
 												<img src="vendors/images/products/2.jpg" class="product-image rounded"
 													alt="">
@@ -136,7 +121,7 @@
 										</div>
 									</div>
 									<div class="col-lg-6 col-xl-4 mb-30">
-										<div class="card card-box border-timi-orange">
+										<div class="card card-box border-dark">
 											<div class="card-body">
 												<img src="vendors/images/products/3.jpeg" class="product-image rounded"
 													alt="">
@@ -153,7 +138,7 @@
 										</div>
 									</div>
 									<div class="col-lg-6 col-xl-4 mb-30">
-										<div class="card card-box border-timi-orange">
+										<div class="card card-box border-dark">
 											<div class="card-body">
 												<img src="vendors/images/products/1.jpg" class="product-image rounded"
 													alt="">
@@ -170,7 +155,7 @@
 										</div>
 									</div>
 									<div class="col-lg-6 col-xl-4 mb-30">
-										<div class="card card-box border-timi-orange">
+										<div class="card card-box border-dark">
 											<div class="card-body">
 												<img src="vendors/images/products/4.jpeg" class="product-image rounded"
 													alt="">
@@ -187,7 +172,7 @@
 										</div>
 									</div>
 									<div class="col-lg-6 col-xl-4 mb-30">
-										<div class="card card-box border-timi-orange">
+										<div class="card card-box border-dark">
 											<div class="card-body">
 												<img src="vendors/images/products/3.jpeg" class="product-image rounded"
 													alt="">
@@ -218,25 +203,53 @@
 					<div class="col-sm-5">
 						<div class="card card-box">
 							<div class="card-body">
+
 								<h5 class="card-title">
 									Orders
 								</h5>
 
-								<hr class="mt-30">
+								<!-- <div class="col-md-4">
+										<a class="btn btn-dark btn-sm float-right">
+											<i class="dw dw-add-user"></i>
+											Add Customer
+										</a>
+									</div> -->
 
+								<div class="row">
+									<div class="col-xl-8">
+										<div class="form-group">
+											<select class="selectpicker form-control" data-size="5">
+												<option>Walk-in Customer</option>
+												<option>Jan Harvey Jiminez</option>
+												<option>Robert Baltazar</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-xl-4 mb-sm-4">
+										<button class="btn btn-dark btn-block">
+											<i class="dw dw-add-user"></i>
+											Add Customer
+										</button>
+									</div>
 
-								<button class="btn btn-info btn-block mb-10">
-									<i class="dw dw-add-user"></i>
-									Add Customer
-								</button>
-
-								<div class="form-group">
-									<select class="selectpicker form-control" data-style="btn-outline-timi-orange"
-										data-size="5">
-										<option>Walk-in Customer</option>
-										<option>Jan Harvey Jiminez</option>
-										<option>Robert Baltazar</option>
-									</select>
+									<div class="col-md-6">
+										<div class="custom-input-with-icon">
+											<div class="form-group">
+												<i class="fa fa-percent input-left-icon"></i>
+												<input type="text" class="form-control custom-input-left-icon"
+													placeholder="Tax" autofocus>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="custom-input-with-icon">
+											<div class="form-group">
+												<i class="fa fa-percent input-left-icon"></i>
+												<input type="text" class="form-control custom-input-left-icon"
+													placeholder="Discount" autofocus>
+											</div>
+										</div>
+									</div>
 								</div>
 
 								<table class="data-table table nowrap">
@@ -251,9 +264,35 @@
 									</thead>
 									<tbody>
 										<tr>
+											<td>Product Name</td>
+											<td>₱ 1,644.00</td>
+											<td>3</td>
+											<td>₱ 4,230.00</td>
 											<td>
-												Product Name
+												<div class="table-actions">
+													<a href="#" data-color="#e95959">
+														<i class="icon-copy dw dw-delete-3">
+														</i>
+													</a>
+												</div>
 											</td>
+										</tr>
+										<tr>
+											<td>Product Name</td>
+											<td>₱ 1,644.00</td>
+											<td>3</td>
+											<td>₱ 4,230.00</td>
+											<td>
+												<div class="table-actions">
+													<a href="#" data-color="#e95959">
+														<i class="icon-copy dw dw-delete-3">
+														</i>
+													</a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>Product Name</td>
 											<td>₱ 1,644.00</td>
 											<td>3</td>
 											<td>₱ 4,230.00</td>
@@ -274,16 +313,9 @@
 
 
 
-
-
-
-
-
-
-
 								<div class="row">
 									<div class="col-md-6">
-										<a href="#" class="btn btn-dark btn-block">
+										<a href="#" class="btn btn-outline-dark btn-block">
 											<i class="dw dw-cancel"></i>
 											Clear
 										</a>

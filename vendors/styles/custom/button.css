@@ -26,6 +26,7 @@
     border-color: #FB5C16
 }
 
+/* D4D4D4 */
 .btn-timi-orange:not(:disabled):not(.disabled).active,
 .btn-timi-orange:not(:disabled):not(.disabled):active,
 .show>.btn-timi-orange.dropdown-toggle {
@@ -43,13 +44,13 @@
 
 
 .btn-outline-timi-orange {
-    color: #000000;
-    border-color: #FB5C16;
+    color: #57595f;
+    border-color: #57595f;
 }
 
 .btn-outline-timi-orange:hover {
-    color: #000000;
-    border-color: #FB5C16;
+    color: #57595f;
+    /* border-color: #FB5C16; */
 }
 
 .btn-outline-timi-orange.focus,
@@ -69,7 +70,7 @@
 .show>.btn-outline-timi-orange.dropdown-toggle {
     color: #fff;
     background-color: #FB5C16;
-    border-color: #FB5C16;
+    border-color: #57595f;
 }
 
 .btn-outline-timi-orange:not(:disabled):not(.disabled).active:focus,
