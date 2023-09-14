@@ -20,6 +20,9 @@
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="vendors/styles/core.css" />
 	<link rel="stylesheet" type="text/css" href="vendors/styles/icon-font.min.css" />
+
+	<!-- bootstrap-touchspin css -->
+	<link rel="stylesheet" type="text/css" href="src/plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.css" />
 	<link rel="stylesheet" type="text/css" href="vendors/styles/style.css" />
 
 	<!-- Custom CSS -->
@@ -31,6 +34,10 @@
 
 	<!-- Custom/Products CSS -->
 	<link rel="stylesheet" type="text/css" href="vendors/styles/custom/products/img-products.css" />
+
+	<!-- Custom HTML Tags -->
+	<link rel="stylesheet" type="text/css" href="vendors/styles/custom-html-tags/input-counter.css" />
+
 
 </head>
 
@@ -271,9 +278,9 @@
 											<tr>
 												<th>Product</th>
 												<th>Price</th>
-												<th>Qty</th>
+												<th width="180px">Quantity</th>
 												<th>Subtotal</th>
-												<th class="datatable-nosort"> </th>
+												<th width="1"></th>
 											</tr>
 										</thead>
 										<tbody>
@@ -283,8 +290,62 @@
 													<br>
 													<small>Barcode</small>
 												</td>
+												<td>
+													Price: ₱ 1,644.00
+												</td>
+												<td>
+													<!-- <div class="input-group my-auto">
+														<div class="input-group-prepend">
+															<button class="btn btn-dark btn-sm rounded-left">
+																<i class="fa fa-minus"></i>
+															</button>
+														</div>
+														<input type="text" class="form-control form-control-sm">
+														<div class="input-group-prepend">
+															<button class="btn btn-dark btn-sm rounded-right">
+																<i class="fa fa-plus"></i>
+															</button>
+														</div>
+													</div> -->
+
+													<div class="custom-counter-tag">
+														<button type="button" class="custom-counter-button btn-minus">
+															<i class="fa fa-minus"></i>
+														</button>
+														<input type="text" class="custom-counter-input" value="1">
+														<button type="button" class="custom-counter-button btn-plus">
+															<i class="fa fa-plus"></i>
+														</button>
+													</div>
+												</td>
+												<td>₱ 4,230.00</td>
+												<td>
+													<div class="table-actions">
+														<a href="#" class="text-danger">
+															<i class="icon-copy dw dw-delete-3">
+															</i>
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													Product Name
+													<br>
+													<small>Barcode</small>
+												</td>
 												<td>₱ 1,644.00</td>
-												<td>3</td>
+												<td>
+													<div class="custom-counter-tag">
+														<button type="button" class="custom-counter-button btn-minus">
+															<i class="fa fa-minus"></i>
+														</button>
+														<input type="text" class="custom-counter-input" value="1">
+														<button type="button" class="custom-counter-button btn-plus">
+															<i class="fa fa-plus"></i>
+														</button>
+													</div>
+												</td>
 												<td>₱ 4,230.00</td>
 												<td>
 													<div class="table-actions">
@@ -302,25 +363,17 @@
 													<small>Barcode</small>
 												</td>
 												<td>₱ 1,644.00</td>
-												<td>3</td>
-												<td>₱ 4,230.00</td>
 												<td>
-													<div class="table-actions">
-														<a href="#" data-color="#e95959">
-															<i class="icon-copy dw dw-delete-3">
-															</i>
-														</a>
+													<div class="custom-counter-tag">
+														<button type="button" class="custom-counter-button btn-minus">
+															<i class="fa fa-minus"></i>
+														</button>
+														<input type="text" class="custom-counter-input" value="1">
+														<button type="button" class="custom-counter-button btn-plus">
+															<i class="fa fa-plus"></i>
+														</button>
 													</div>
 												</td>
-											</tr>
-											<tr>
-												<td>
-													Product Name
-													<br>
-													<small>Barcode</small>
-												</td>
-												<td>₱ 1,644.00</td>
-												<td>3</td>
 												<td>₱ 4,230.00</td>
 												<td>
 													<div class="table-actions">
@@ -426,6 +479,18 @@
 	<script src="vendors/scripts/script.min.js"></script>
 	<script src="vendors/scripts/process.js"></script>
 	<script src="vendors/scripts/layout-settings.js"></script>
+
+	<!-- bootstrap-touchspin js -->
+	<script src="src/plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
+
+	<!-- Bootstrap Touchspin -->
+	<script>
+		$("input[name='demo_vertical2']").TouchSpin({
+			verticalbuttons: true,
+			// verticalupclass: 'fa fa-plus',
+			// verticaldownclass: 'fa fa-minus'
+		});
+	</script>
 
 </body>
 
